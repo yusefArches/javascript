@@ -102,12 +102,12 @@ const Numlength = Num.toString().length;
 let Numstring;
 let NumReversed='';
 for ( let i = 0; i < Numlength; i++) {
-    
+    //isolate the last digit
     Numstring=(NumCopy/10).toString().split('.');
-    
+    //add the isolated digit to the i position of NumReversed string
     NumReversed+=Numstring[1];
-
+    //get the remaining digits to Numcopy to repeat the process again
     NumCopy=Numstring[0];
   
 }
-//console.log(Num,"reversed is",NumReversed);
+console.log(Num,"reversed is",NumReversed);
